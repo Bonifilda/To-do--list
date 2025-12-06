@@ -1,18 +1,59 @@
-# React + Vite
+ Draggable Tasks App
+This project is a simple React draggable tasks application where users can:
+Add tasks
+Drag tasks anywhere on the screen
+Auto-prevent overlapping between tasks
+Save tasks in localStorage so they persist after refresh
+Delete tasks
+It uses React Hooks (useState, useEffect, useRef) and pure mouse events for drag-and-drop.
+ Features
+- Add Tasks
+Users can type a task and click Add.
+The task appears below the input in the nearest free space.
+- Draggable Cards
+Each task card can be dragged anywhere on the window.
+It automatically stays inside the viewport.
+- Auto Collision Avoidance
+Tasks will never overlap.
+If a dragged task overlaps, it moves to the nearest free position.
+- Local Storage
+All tasks are saved in the browser, so refreshing the page will not delete them.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Delete Tasks
+Click ❌ to remove a task from the list.
+* Project Structure
+src/
+ └── App.jsx
+ └── index.js
 
-Currently, two official plugins are available:
+-Technologies Used
+React.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TailwindCSS (for styling)
 
-## React Compiler
+LocalStorage (for saving tasks)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+JavaScript mouse events (drag & drop)
 
-Note: This will impact Vite dev & build performances.
+▶ How to Run the Project
 
-## Expanding the ESLint configuration
+Clone the repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone your-repo-link
+Install dependencies
+npm install
+Start the development server
+npm run dev
+Future Improvements
+
+Add animations when dragging
+
+Add categories or colors
+
+Add deadlines and reminders
+
+Enable resizing task boxes
+
+📄 License
+
+This project is free to use. Customize it as you like for learning or personal projects.
